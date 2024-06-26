@@ -110,7 +110,43 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--first-color);
+  z-index: var(--z-fixed);
+  transition: box-shadow .4s;
+}
 
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__menu {
+  display: flex;
+}
+
+.nav__logo {
+  font-family: var(--second-font);
+  text-shadow: var(--shadow-text);
+  color: var(--white-color);
+}
+
+.nav__close,
+.nav__toggle {
+  display: flex;
+  font-size: 1.5rem;
+}
 
 /* Navigation for mobile devices */
 
